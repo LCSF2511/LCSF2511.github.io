@@ -1,0 +1,144 @@
+/*
+Author: Rachel Gray
+Student #: c0575209
+Date: 2025-11-20
+File Name: about.css
+*/
+
+/* Main Layout */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2em;
+    padding: 2em;
+}
+
+/* Article Section (Main Content) */
+article {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    padding: 2.5em;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+article h2 {
+    color: #fab609;
+    font-size: 2em;
+    margin-bottom: 0.8em;
+    margin-top: 1.5em;
+    border-bottom: 2px solid #fab609;
+    padding-bottom: 0.5em;
+}
+
+article h2:first-child {
+    margin-top: 0;
+}
+
+article p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 1.2em;
+    color: #d0d0d0;
+}
+
+/* Aside Section (Team Members Sidebar) */
+aside {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    border: 2px solid #fab609;
+}
+
+aside h3 {
+    color: #fab609;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Section Elements (Team Categories) */
+section {
+    margin-bottom: 2em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid rgba(250,182,9,0.3);
+}
+
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+section h4 {
+    color: #fab609;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+/* Figure and Figcaption Elements */
+figure {
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em;
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+figure:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(250,182,9,0.3);
+}
+
+figure img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 0.5em auto;
+    border: 3px solid #fab609;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    object-fit: cover;
+}
+
+figcaption {
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+/* Hover Effects */
+article {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(250,182,9,0.3);
+}
+
+aside {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+aside:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(250,182,9,0.4);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    aside {
+        order: 2;
+    }
+    
+    article {
+        order: 1;
+    }
+}

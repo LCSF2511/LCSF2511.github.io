@@ -1,0 +1,185 @@
+/*
+Author: Rachel Gray
+Student #: c0575209
+Date: 2025-11-20
+File Name: about.css
+*/
+
+/* Center intro text on training page */
+main h1,
+main p {
+    text-align: center;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1em;
+}
+
+h1 {
+    color: #fab609;
+}
+
+/* Table */
+table {
+    border: 3px solid #fab609;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    background-color: #000;
+}
+
+/* Table caption */
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+    
+    padding: 10px;
+}
+
+/* Table cells */
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #555;
+}
+
+td {
+    color: #fff;
+}
+
+.odd-row td {
+    color: #fff; 
+}
+
+/* Table Images */
+.image-center {
+    text-align: center;           
+    margin-bottom: 20px;      
+}
+
+.table-icon {
+    display: inline-block;
+    width: 80px;  
+    height: auto; 
+}
+
+/* Header cells */
+th {
+    background-color: #fab609;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Alternating row colors */
+.odd-row {
+    background-color: #1a1a1a;
+}
+
+tbody tr:not(.odd-row) {
+    background-color: #2a2a2a;
+}
+
+/* Row hover effect */
+tr:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+thead tr:hover {
+    background-color: #fab609;
+    cursor: default;
+}
+
+/* Links in table */
+td a {
+    color: #fab609;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    color: #ffbb00;
+    text-decoration: underline;
+}
+
+/* Intro Text */
+#intro-text {
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto 2em auto;
+    padding: 0 1em;
+}
+
+
+/* Registration */
+#registration-info {
+    text-align: center;
+    margin: 2em auto;
+    padding: 1.5em;
+    max-width: 800px;
+}
+
+#registration-info p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+#registration-info a {
+    color: #fab609;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#registration-info a:hover {
+    color: #ffbb00;
+    text-decoration: underline;
+}
+
+
+/* -- MEDIA QUERIES -- */
+
+/* Mobile viewport */
+@media screen and (max-width: 600px) {
+    table {
+        width: 95%;
+        font-size: 0.85em;
+    }
+
+    caption {
+        font-size: 1.2em;
+    }
+
+    th, td {
+        padding: 8px 5px;
+        font-size: 0.9em;
+    }
+
+    #intro-text {
+        padding: 0 0.5em;
+    }
+
+    #registration-info {
+        padding: 1em;
+    }
+
+    #registration-info p {
+        font-size: 1em;
+    }
+}
+
+/* Tablet viewport */
+@media screen and (min-width: 601px) and (max-width: 960px) {
+    table {
+        width: 92%;
+        font-size: 0.95em;
+    }
+
+    th, td {
+        padding: 10px 12px;
+    }
+}

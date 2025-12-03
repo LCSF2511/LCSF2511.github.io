@@ -1,0 +1,584 @@
+/*
+Author: Rachel Gray
+Student #: c0575209
+Date: 2025-11-20
+File Name: about.css
+*/
+
+/* Styles for Mobile */
+
+/* Hide tablet and desktop by default */
+.tablet,
+.desktop {
+    display: none;
+}
+
+/* Mobile is shown by default */
+.mobile {
+    display: block;
+}
+
+/* Mobile Header and Navigation */
+@media screen and (max-width: 629px) {
+    #header-nav-wrapper {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    header {
+        width: auto;
+        float: none;
+        margin: 0.5em auto;
+        text-align: center;
+        display: block;
+        padding: 0.5em;
+    }
+    
+    header img {
+        max-width: 120px;
+        height: auto;
+        margin: 0 auto;
+        float: none;
+    }
+    
+/* Mobile Nav */
+    .mobile-nav {
+        display: block;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin: 1em auto;
+        clear: both;
+    }
+
+    nav {
+        width: 100%;
+        float: none;
+        margin: 0;
+        text-align: center;
+        border-bottom: none;
+    }
+    
+    nav p {
+        font-size: 0.9em;
+        line-height: 1.8;
+    }
+    
+    nav a {
+        display: inline-block;
+        margin: 0.2em;
+    }
+    
+    /* Hero Banner */
+    #hero {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #hero img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+/* About Intro */
+#about-intro {
+    width: 90%;
+    margin: 2em auto;
+    padding: 1.5em;
+    text-align: center;
+}
+
+#about-intro h2 {
+    color: #fab609;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.tagline {
+    font-size: 1.3em;
+    color: #fab609;
+    font-style: italic;
+    display: block;
+    margin-bottom: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+#about-intro p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    color: #e0e0e0;
+}
+
+/* Our Story Style Rules */
+#our-story {
+    width: 90%;
+    margin: 2em auto;
+    padding: 1.5em;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+
+#our-story h2 {
+    color: #fab609;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    text-align: center;
+    border-bottom: 2px solid #fab609;
+    padding-bottom: 0.5em;
+}
+
+.story-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 1.5em auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(250,182,9,0.3);
+    display: block;
+}
+
+#our-story p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    color: #d0d0d0;
+}
+
+/* Reasons Style Rules */
+#reasons-section {
+    width: 90%;
+    margin: 2em auto;
+    padding: 1.5em;
+    background: rgba(250,182,9,0.1);
+    border: 2px solid #fab609;
+    border-radius: 15px;
+}
+
+#reasons-section h2 {
+    color: #fab609;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#reasons-section ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+#reasons-section li {
+    font-size: 1.05em;
+    line-height: 1.8;
+    margin-bottom: 1em;
+    color: #fff;
+    padding-left: 0.5em;
+}
+
+#reasons-section li strong {
+    color: #fab609;
+}
+
+/* Guarantee Style Rules */
+#guarantee-section {
+    width: 90%;
+    margin: 2em auto;
+    padding: 2em;
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    border-radius: 15px;
+    border: 3px solid #fab609;
+    box-shadow: 0 8px 20px rgba(250,182,9,0.4);
+}
+
+#guarantee-section h2 {
+    color: #fab609;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#guarantee-section p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+#guarantee-section strong {
+    color: #fab609;
+    font-size: 1.1em;
+}
+
+/* Navigation Pseudo-Classes */
+nav a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #fff;
+}
+
+nav a:hover {
+    color: #fab609;
+    text-decoration: none;
+}
+
+nav a:focus {
+    color: #fab609;
+    text-decoration: none;
+}
+
+nav a:active {
+    color: #ffbb00;
+}
+
+
+/* Styles for Table */
+@media screen and (min-width: 630px) and (max-width: 1014px) {
+    
+    /* Hide mobile, show tablet */
+    .mobile {
+        display: none;
+    }
+    
+    .tablet {
+        display: block;
+    }
+    
+    .desktop {
+        display: none;
+    }
+
+    /* Header and Logo Tablet Fixes */
+    header {
+        width: auto;
+        float: none;
+        margin: 0.5em auto;
+        text-align: center;
+        display: inline-block;
+        padding: 0.2em;
+    }
+    
+    header img {
+        max-width: 150px;
+        height: auto;
+    }
+    
+    #header-nav-wrapper {
+        text-align: center;
+    }
+    
+    nav {
+        float: none;
+        margin: 1em auto;
+        width: auto;
+    }
+    nav p {
+        font-size: 1em;
+    }
+
+    /* About Introduction */
+    #about-intro {
+        width: 85%;
+        padding: 2em;
+    }
+
+    #about-intro h2 {
+        font-size: 2.5em;
+    }
+
+    .tagline {
+        font-size: 1.5em;
+    }
+
+    #about-intro p {
+        font-size: 1.2em;
+    }
+
+    /* Our Story */
+    #our-story {
+        width: 85%;
+        padding: 2em;
+    }
+
+    #our-story h2 {
+        font-size: 2.2em;
+    }
+
+    .story-image {
+        max-width: 500px;
+    }
+
+    #our-story p {
+        font-size: 1.15em;
+    }
+
+    /* Reasons */
+    #reasons-section {
+        width: 85%;
+        padding: 2em;
+    }
+
+    #reasons-section h2 {
+        font-size: 2.2em;
+    }
+
+    #reasons-section li {
+        font-size: 1.1em;
+        line-height: 2;
+    }
+
+    /* Guarantee */
+    #guarantee-section {
+        width: 85%;
+        padding: 2.5em;
+    }
+
+    #guarantee-section h2 {
+        font-size: 2.2em;
+    }
+
+    #guarantee-section p {
+        font-size: 1.2em;
+    }
+
+}
+
+
+/* Style Rules for Desktop */
+@media screen and (min-width: 1015px) {
+    
+    /* Hide mobile and tablet, show desktop */
+    .mobile,
+    .tablet {
+        display: none;
+    }
+    
+    .desktop {
+        display: block;
+    }
+
+    /* About Introduction */
+    #about-intro {
+        width: 80%;
+        max-width: 1000px;
+        padding: 2.5em;
+    }
+
+    #about-intro h2 {
+        font-size: 3em;
+    }
+
+    .tagline {
+        font-size: 1.8em;
+        margin-bottom: 2em;
+    }
+
+    #about-intro p {
+        font-size: 1.25em;
+        line-height: 1.8;
+    }
+
+    /* Our Story - Two Column Layout */
+    #our-story {
+        width: 80%;
+        max-width: 1000px;
+        padding: 2.5em;
+    }
+
+    #our-story h2 {
+        font-size: 2.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .story-content {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 2em;
+        align-items: center;
+    }
+
+    .story-text p {
+        font-size: 1.15em;
+        line-height: 1.8;
+    }
+
+    .story-image {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    /* Reasons and Guarantee */
+    #reasons-guarantee-wrapper {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 2em;
+        width: 80%;
+        max-width: 1000px;
+        margin: 2em auto;
+    }
+
+    #reasons-section {
+        width: 100%;
+        margin: 0;
+        padding: 2.5em;
+    }
+
+    #reasons-section h2 {
+        font-size: 2.3em;
+    }
+
+    #reasons-section ol {
+        padding-left: 1.5em;
+    }
+
+    #reasons-section li {
+        font-size: 1.15em;
+        line-height: 2.2;
+        margin-bottom: 1.2em;
+    }
+
+    /* Guarantee */
+    #guarantee-section {
+        width: 100%;
+        margin: 0;
+        padding: 2.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #guarantee-section h2 {
+        font-size: 2.3em;
+    }
+
+    #guarantee-section p {
+        font-size: 1.15em;
+        line-height: 1.8;
+    }
+
+}
+
+/* Extra enhancements */
+
+/* Smooth Transitions */
+#about-intro,
+#our-story,
+#reasons-section,
+#guarantee-section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#our-story:hover,
+#reasons-section:hover,
+#guarantee-section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(250,182,9,0.3);
+}
+
+/* Print Styles */
+@media print {
+    .mobile,
+    .tablet {
+        display: none;
+    }
+    
+    .desktop {
+        display: block;
+    }
+    
+    nav,
+    footer {
+        display: none;
+    }
+    
+    #hero {
+        display: none;
+    }
+}
+
+/* Hamburger Menu Style Rules */
+
+/* Hide tablet/desktop nav on mobile, show mobile nav */
+@media screen and (max-width: 629px) {
+    .tablet-desktop-nav {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: block;
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Hamburger icon */
+    .mobile-nav .menu-icon {
+        display: block;
+        position: relative;
+        right: auto;
+        top: auto;
+        font-size: 2.5em;
+        color: #fab609;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 0 auto;
+        width: fit-content;
+    }
+    
+    .mobile-nav .menu-icon:hover {
+        color: #ffbb00;
+    }
+    
+    /* Menu links - hidden by default */
+    #menu-links {
+        display: none;
+        clear: both;
+        margin-top: 1em;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    /* Style for each menu link */
+    #menu-links a {
+        color: #fff;
+        font-size: 1.2em;
+        text-align: center;
+        text-decoration: none;
+        padding: 1em;
+        display: block;
+        background: #2d2d2d;
+        margin: 0.3em 0;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    
+    #menu-links a:hover {
+        background: rgba(250,182,9,0.3);
+        color: #fab609;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(250,182,9,0.7);
+    }
+}
+
+/* Hide mobile nav on tablet/desktop, show regular nav */
+@media screen and (min-width: 630px) {
+    .mobile-nav {
+        display: none;
+    }
+    
+    .tablet-desktop-nav {
+        display: block;
+    }
+}

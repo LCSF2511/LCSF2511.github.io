@@ -1,0 +1,233 @@
+/*
+Author: Rachel Gray
+Student #: c0575209
+Date: 2025-11-20
+File Name: about.css
+*/
+
+/* Form Instructions */
+#form-instructions {
+    width: 80%;
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1.5em;
+    text-align: center;
+    color: #fff;
+}
+
+#form-instructions h2 {
+    color: #fab609;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+}
+
+#form-instructions p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+#form-instructions ol {
+    text-align: left;
+    margin: 1em auto;
+    max-width: 600px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #fff;
+    display: inline-block;
+    padding-left: 1.5em;
+}
+
+#form-instructions {
+    text-align: center;
+}
+
+#form-instructions li {
+    margin-bottom: 0.8em;
+}
+
+/* Form Container */
+form {
+    width: 80%;
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Fieldset */
+fieldset {
+    margin-bottom: 2em;
+    padding: 1.5em;
+    border: 2px solid #fab609;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+}
+
+legend {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #fab609;
+    padding: 0 0.5em;
+}
+
+/* Label */
+label {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 600;
+}
+
+.inline-label {
+    display: inline;
+    margin-left: 0.5em;
+    margin-right: 1.5em;
+    font-weight: normal;
+}
+
+.field-label {
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+/* Input Field */
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 0.5em;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+    outline: none;
+    border-color: #fab609;
+    background-color: #333;
+}
+
+/* Radio Button and Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.3em;
+    margin-top: 0.8em;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    accent-color: #fab609;
+}
+
+input[type="checkbox"] {
+    accent-color: #fab609;
+}
+
+/* Select Dropdown */
+select {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: #fab609;
+    background-color: #333;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #fab609;
+    background-color: #333;
+}
+
+/* Placeholder Text */
+input::placeholder,
+textarea::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Button Container */
+.button-container {
+    text-align: center;
+    margin-top: 2em;
+    padding-top: 1em;
+}
+
+/* Styling for Button */
+button {
+    padding: 0.9em 2em;
+    margin: 0.5em;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button[type="submit"] {
+    background-color: #fab609;
+    color: #000;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffbb00;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(250, 182, 9, 0.4);
+}
+
+button[type="reset"] {
+    background-color: #555;
+    color: #fff;
+}
+
+button[type="reset"]:hover {
+    background-color: #666;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(85, 85, 85, 0.4);
+}
+
+button:active {
+    transform: scale(0.98);
+}

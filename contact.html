@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- This website template was created by: Rachel Gray, c0575209 -->
+<html lang="en">
+<head>
+    <title>Contact Us - Gray Matter Light Co.</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+</head>
+<body>
+    
+    <div id="header-nav-wrapper">
+
+        <header>
+            <a href="index.html"><img src="images/gray-matter-logo.png" alt="Gray Matter logo" height="150" width="200"></a>
+        </header>
+
+        <nav>
+            <p>
+                <a href="index.html">Home</a> &nbsp; &nbsp;
+                <a href="about.html">About</a> &nbsp; &nbsp;
+                <a href="team.html">Our Team</a> &nbsp; &nbsp;
+                <a href="specials.html">Specials</a> &nbsp; &nbsp;
+                <a href="training.html">Training</a> &nbsp; &nbsp;
+                <a href="media.html">Media</a> &nbsp; &nbsp;
+                <a href="faqs.html">FAQs</a> &nbsp; &nbsp;
+                <a href="contact.html">Contact Us</a>
+            </p>
+        </nav>
+
+    </div>
+
+    <div id="hero">
+        <img src="images/banner2.jpg" alt="Gray Matter Company Banner">
+    </div>
+
+    <div id="container">
+
+        <div class="desktop">
+
+            <main>
+
+                <div id="form-instructions">
+                    <h2>Get in Touch</h2>
+                    <p>We'd love to hear from you! Please follow these steps to submit your inquiry:</p>
+                    <ol>
+                        <li>Fill out your contact information in the form below</li>
+                        <li>Select your preferred contact method</li>
+                        <li>Choose the reason for your inquiry</li>
+                        <li>Provide details about your request</li>
+                        <li>Click "Submit Request" to send your message</li>
+                    </ol>
+                </div>
+
+                <form action="submit_form.php" method="post">
+                    
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        
+                        <label for="fname-desktop">First Name:</label>
+                        <input type="text" id="fname-desktop" name="fname" size="30" placeholder="Enter your first name" required>
+                        
+                        <label for="lname-desktop">Last Name:</label>
+                        <input type="text" id="lname-desktop" name="lname" size="30" placeholder="Enter your last name" required>
+                        
+                        <label for="email-desktop">Email Address:</label>
+                        <input type="email" id="email-desktop" name="email" size="30" placeholder="example@email.com" required>
+                        
+                        <label for="phone-desktop">Phone Number:</label>
+                        <input type="text" id="phone-desktop" name="phone" size="20" placeholder="(123) 456-7890">
+                        
+                        <label for="visit-date-desktop">Preferred Contact Date:</label>
+                        <input type="date" id="visit-date-desktop" name="visit-date">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Contact Preferences</legend>
+                        
+                        <p class="field-label">Preferred Contact Method:</p>
+                        <input type="radio" id="contact-email-desktop" name="contact-method" value="email" checked>
+                        <label for="contact-email-desktop" class="inline-label">Email</label>
+                        
+                        <input type="radio" id="contact-phone-desktop" name="contact-method" value="phone">
+                        <label for="contact-phone-desktop" class="inline-label">Phone</label>
+                        
+                        <input type="radio" id="contact-text-desktop" name="contact-method" value="text">
+                        <label for="contact-text-desktop" class="inline-label">Text Message</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Inquiry Details</legend>
+                        
+                        <label for="inquiry-type-desktop">Reason for Contact:</label>
+                        <select id="inquiry-type-desktop" name="inquiry-type" required>
+                            <option value="">-- Select One --</option>
+                            <option value="product-info">Product Information</option>
+                            <option value="special-order">Special Order</option>
+                            <option value="technical-support">Technical Support</option>
+                            <option value="warranty">Warranty Claim</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                        
+                        <p class="field-label">Areas of Interest (select all that apply):</p>
+                        <input type="checkbox" id="desk-lamps-desktop" name="interest-desk" value="desk-lamps">
+                        <label for="desk-lamps-desktop" class="inline-label">Desk Lamps</label>
+                        
+                        <input type="checkbox" id="floor-lamps-desktop" name="interest-floor" value="floor-lamps">
+                        <label for="floor-lamps-desktop" class="inline-label">Floor Lamps</label>
+                        
+                        <input type="checkbox" id="smart-lighting-desktop" name="interest-smart" value="smart-lighting">
+                        <label for="smart-lighting-desktop" class="inline-label">Smart Lighting Systems</label>
+                        
+                        <input type="checkbox" id="accessories-desktop" name="interest-accessories" value="accessories">
+                        <label for="accessories-desktop" class="inline-label">Accessories</label>
+                        
+                        <label for="message-desktop">Your Message:</label>
+                        <textarea id="message-desktop" name="message" rows="6" placeholder="Please provide details about your inquiry..." required></textarea>
+                    </fieldset>
+
+                    <div class="button-container">
+                        <button type="submit">Submit Request</button>
+                        <button type="reset">Reset Form</button>
+                    </div>
+
+                </form>
+
+            </main>
+
+        </div>
+
+        <footer>
+            <p>&copy; Copyright 2025. All Rights Reserved.</p>
+            <p><a href="mailto:info@graymatterlightco.com">Request Information</a></p>
+            <p>Rachel Gray &nbsp; &nbsp; c0575209</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
