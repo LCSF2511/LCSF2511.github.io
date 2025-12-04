@@ -388,7 +388,7 @@ nav a:active {
         line-height: 1.8;
     }
 
-    /* Our Story - Two Column Layout */
+    /* Our Story */
     #our-story {
         width: 80%;
         max-width: 1000px;
@@ -401,20 +401,25 @@ nav a:active {
     }
 
     .story-content {
-        display: grid;
-        grid-template-columns: 1.5fr 1fr;
-        gap: 2em;
-        align-items: center;
+        display: block;
+        width: 100%;
+        float: none;
     }
 
     .story-text p {
         font-size: 1.15em;
         line-height: 1.8;
+        display: block;
+        width: 100%;
     }
 
     .story-image {
-        max-width: 100%;
-        margin: 0;
+        max-width: 800px;
+        width: 100%;
+        height: auto;
+        margin: 2em auto;
+        display: block;
+        
     }
 
     /* Reasons and Guarantee */
